@@ -71,3 +71,12 @@
   font-style: italic;
   font-display: swap;
 }
+
+/* Recoleta DEMO substitutes the Latinotype logo for the "fi" ligature.
+   Disabling ligatures renders f + i as separate glyphs. Remove once the
+   full family is licensed so the real ligatures come back. */
+* {
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+}

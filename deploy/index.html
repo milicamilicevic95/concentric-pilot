@@ -13,7 +13,7 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: #F4F0E8; -webkit-font-smoothing: antialiased; }
   html { scroll-behavior: smooth; }
-  a { color: #A97A43; }
+  a { color: #8A5F2E; }
   a:hover { color: #7d5c30; }
   a:focus-visible, button:focus-visible { outline: 2px solid #A97A43; outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -24,7 +24,7 @@
 
   <nav ref="{{ navRef }}" style="position: sticky; top: 0; z-index: 300; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px clamp(20px, 5vw, 52px); background: transparent; border-bottom: 1px solid transparent; transition: background 300ms ease, border-color 300ms ease;">
     <a href="#top" aria-label="Concentric home" style="display: flex; align-items: center; text-decoration: none;">
-      <img ref="{{ logoRef }}" src="./assets/concentric-lockup-ink-nav.png" alt="Concentric" style="height: clamp(32px, 5vw, 44px); width: auto; display: block;" />
+      <img ref="{{ logoRef }}" src="./assets/concentric-lockup-ink-nav.png" alt="Concentric" style="height: clamp(32px, 5vw, 44px); width: auto; display: block;">
     </a>
     <div ref="{{ deskNavRef }}" style="display: none; align-items: center; gap: clamp(20px, 2.6vw, 34px);">
       <a href="#council" style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: inherit; opacity: 0.82;" style-hover="opacity: 1;">The Council</a>
@@ -42,46 +42,46 @@
   <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
   <div style="position: fixed; inset: 0; z-index: 400; background: #F4F0E8; display: flex; flex-direction: column; padding: 18px clamp(20px, 5vw, 52px) 40px;">
     <div style="display: flex; align-items: center; justify-content: space-between;">
-      <img src="./assets/concentric-lockup-ink-nav.png" alt="Concentric" style="height: 32px; width: auto; display: block;" />
-      <button onClick="{{ toggleMenu }}" aria-label="Close menu" style="width: 40px; height: 40px; background: transparent; border: none; font-size: 24px; line-height: 1; cursor: pointer; color: #20211F;">&times;</button>
+      <img src="./assets/concentric-lockup-ink-nav.png" alt="Concentric" style="height: 32px; width: auto; display: block;">
+      <button onClick="{{ toggleMenu }}" aria-label="Close menu" style="width: 40px; height: 40px; background: transparent; border: none; font-size: 24px; line-height: 1; cursor: pointer; color: #20211F;">×</button>
     </div>
     <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 56px;">
       <a href="#council" onClick="{{ toggleMenu }}" style="font-family: 'Recoleta', Georgia, serif; font-size: 34px; line-height: 1.5; text-decoration: none; color: #20211F;">The Council</a>
       <a href="#edition" onClick="{{ toggleMenu }}" style="font-family: 'Recoleta', Georgia, serif; font-size: 34px; line-height: 1.5; text-decoration: none; color: #20211F;">Edition One</a>
       <a href="#evidence" onClick="{{ toggleMenu }}" style="font-family: 'Recoleta', Georgia, serif; font-size: 34px; line-height: 1.5; text-decoration: none; color: #20211F;">Evidence Base</a>
       <a href="#journal" onClick="{{ toggleMenu }}" style="font-family: 'Recoleta', Georgia, serif; font-size: 34px; line-height: 1.5; text-decoration: none; color: #20211F;">Journal</a>
-      <a href="./apply.html" style="font-family: 'Recoleta', Georgia, serif; font-size: 34px; line-height: 1.5; text-decoration: none; color: #A97A43; margin-top: 20px;">Apply &rarr;</a>
+      <a href="./apply.html" style="font-family: 'Recoleta', Georgia, serif; font-size: 34px; line-height: 1.5; text-decoration: none; color: #A97A43; margin-top: 20px;">Apply →</a>
     </div>
   </div>
   </sc-if>
 
   <section id="top" style="min-height: 80svh; display: flex; flex-direction: column; justify-content: center; padding: clamp(56px, 8vw, 90px) clamp(20px, 5vw, 52px) clamp(80px, 9vw, 120px); position: relative;">
-    <p data-reveal style="font-size: clamp(11px, 1.2vw, 12px); letter-spacing: 0.22em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(28px, 4vw, 44px);">Who challenges you?</p>
-    <h1 data-reveal data-reveal-delay="300" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(42px, 7vw, 104px); line-height: 1; max-width: 900px; margin: 0 0 clamp(28px, 4vw, 44px); text-wrap: balance;">Your professional <em style="font-style: italic; color: #A97A43;">devil&rsquo;s advocate.</em></h1>
-    <div data-reveal data-reveal-delay="600" style="max-width: 620px;">
+    <p data-reveal="" style="font-size: clamp(11px, 1.2vw, 12px); letter-spacing: 0.22em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 clamp(28px, 4vw, 44px);">Who challenges you?</p>
+    <h1 data-reveal="" data-reveal-delay="300" style="font-family: 'Recoleta', Georgia, serif; font-weight: 500; font-size: clamp(60px, 7vw, 104px); line-height: 1; max-width: 900px; margin: 0 0 clamp(28px, 4vw, 44px); text-wrap: balance">Your professional <em style="font-style: italic; color: #A97A43;">devil’s advocate.</em></h1>
+    <div data-reveal="" data-reveal-delay="600" style="max-width: 620px;">
       <p style="font-size: clamp(17px, 2vw, 21px); line-height: 1.7; margin: 0 0 18px; opacity: 0.78;">Concentric composes peer Councils for professionally established women with something consequential in play.</p>
       <p style="font-size: clamp(17px, 2vw, 21px); line-height: 1.7; margin: 0 0 clamp(32px, 4vw, 44px); opacity: 0.78;">Six women. 90 minutes a month. A room built to question assumptions and move important thinking forward.</p>
-      <a href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 16px 32px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for Edition One &rarr;</a>
+      <a href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 16px 32px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for Edition One →</a>
     </div>
     <div style="margin-top: clamp(48px, 7vw, 76px); padding-top: 20px; border-top: 1px solid rgba(200,192,180,0.5); display: flex; gap: clamp(18px, 3vw, 36px); flex-wrap: wrap;">
-      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.45;">Research-led.</span>
-      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.45;">Evidence-informed.</span>
-      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.45;">Shaped by expert perspectives.</span>
+      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.78;">Research-led.</span>
+      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.78;">Evidence-informed.</span>
+      <span style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.78;">Shaped by expert perspectives.</span>
     </div>
   </section>
 
   <section style="background: #EDE9DF; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 5.4vw, 72px); line-height: 1.06; max-width: 820px; margin: 0 0 clamp(36px, 5vw, 56px); text-wrap: balance;">You already have people to talk to.</h2>
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 5.4vw, 72px); line-height: 1.06; max-width: 820px; margin: 0 0 clamp(36px, 5vw, 56px); text-wrap: balance;">You already have people to talk to.</h2>
     <ul style="list-style: none; margin: 0 0 clamp(40px, 6vw, 64px); padding: 0; display: flex; flex-wrap: wrap; gap: 10px clamp(18px, 3vw, 32px);">
-      <li data-reveal data-reveal-delay="0" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Friends.</li>
-      <li data-reveal data-reveal-delay="140" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Colleagues.</li>
-      <li data-reveal data-reveal-delay="280" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Mentors.</li>
-      <li data-reveal data-reveal-delay="420" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Partners.</li>
-      <li data-reveal data-reveal-delay="560" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">A network.</li>
-      <li data-reveal data-reveal-delay="700" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.55;">They matter.</li>
+      <li data-reveal="" data-reveal-delay="0" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Friends.</li>
+      <li data-reveal="" data-reveal-delay="140" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Colleagues.</li>
+      <li data-reveal="" data-reveal-delay="280" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Mentors.</li>
+      <li data-reveal="" data-reveal-delay="420" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">Partners.</li>
+      <li data-reveal="" data-reveal-delay="560" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.7;">A network.</li>
+      <li data-reveal="" data-reveal-delay="700" style="font-size: clamp(16px, 1.8vw, 19px); opacity: 0.78;">They matter.</li>
     </ul>
-    <div data-reveal data-reveal-delay="900" style="max-width: 760px;">
-      <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(24px, 3.6vw, 46px); line-height: 1.24; margin: 0 0 28px; text-wrap: pretty;">But when something important is at stake, who gives you the <em style="font-style: italic; color: #A97A43;">&ldquo;what about?&rdquo;</em></p>
+    <div data-reveal="" data-reveal-delay="900" style="max-width: 760px;">
+      <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(24px, 3.6vw, 46px); line-height: 1.24; margin: 0 0 28px; text-wrap: pretty;">But when something important is at stake, who gives you the <em style="font-style: italic; color: #A97A43;">“what about?”</em></p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.75; margin: 0 0 10px; opacity: 0.68;">Who questions the assumption everyone has accepted?</p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.75; margin: 0 0 32px; opacity: 0.68;">Who can stress-test your thinking without a stake in what you choose?</p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.75; margin: 0; opacity: 0.9;">That is the role Concentric puts into the room.</p>
@@ -90,31 +90,31 @@
 
   <section style="padding: clamp(80px, 11vw, 140px) clamp(20px, 5vw, 52px);">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 6vw, 80px); align-items: start;">
-      <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.08; margin: 0; text-wrap: balance;">A strong network can still leave a <em style="font-style: italic; color: #A97A43;">gap.</em></h2>
-      <p data-reveal data-reveal-delay="180" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; opacity: 0.7;">Different relationships do different jobs. None of them needs replacing. But they do not always create the conditions for candid, independent challenge.</p>
+      <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.08; margin: 0; text-wrap: balance;">A strong network can still leave a <em style="font-style: italic; color: #A97A43;">gap.</em></h2>
+      <p data-reveal="" data-reveal-delay="180" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; opacity: 0.7;">Different relationships do different jobs. None of them needs replacing. But they do not always create the conditions for candid, independent challenge.</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(28px, 4vw, 48px); margin-top: clamp(48px, 7vw, 84px);">
-      <div data-reveal style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
+      <div data-reveal="" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
         <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; margin: 0 0 10px;">Friend</p>
         <p style="font-size: 17px; line-height: 1.65; margin: 0; opacity: 0.65;">Knows your history.</p>
       </div>
-      <div data-reveal data-reveal-delay="80" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
+      <div data-reveal="" data-reveal-delay="80" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
         <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; margin: 0 0 10px;">Partner</p>
         <p style="font-size: 17px; line-height: 1.65; margin: 0; opacity: 0.65;">May live with the consequences.</p>
       </div>
-      <div data-reveal data-reveal-delay="160" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
+      <div data-reveal="" data-reveal-delay="160" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
         <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; margin: 0 0 10px;">Colleague</p>
         <p style="font-size: 17px; line-height: 1.65; margin: 0; opacity: 0.65;">Sits inside the same system.</p>
       </div>
-      <div data-reveal data-reveal-delay="240" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
+      <div data-reveal="" data-reveal-delay="240" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
         <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; margin: 0 0 10px;">Mentor</p>
         <p style="font-size: 17px; line-height: 1.65; margin: 0; opacity: 0.65;">Brings experience and advice.</p>
       </div>
-      <div data-reveal data-reveal-delay="320" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
+      <div data-reveal="" data-reveal-delay="320" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
         <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; margin: 0 0 10px;">Sponsor</p>
         <p style="font-size: 17px; line-height: 1.65; margin: 0; opacity: 0.65;">Has invested in your progression.</p>
       </div>
-      <div data-reveal data-reveal-delay="400" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
+      <div data-reveal="" data-reveal-delay="400" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 18px;">
         <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; margin: 0 0 10px;">Network</p>
         <p style="font-size: 17px; line-height: 1.65; margin: 0; opacity: 0.65;">Creates access and opportunity.</p>
       </div>
@@ -122,23 +122,23 @@
   </section>
 
   <section style="background: #EDE9DF; padding: clamp(72px, 9vw, 120px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(28px, 4vw, 44px);">The gap tends to show when</p>
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 clamp(28px, 4vw, 44px);">The gap tends to show when</p>
     <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(20px, 3vw, 36px);">
-      <li data-reveal style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">The question is still unfinished.</li>
-      <li data-reveal data-reveal-delay="100" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">You know what you want and need the plan stress-tested.</li>
-      <li data-reveal data-reveal-delay="200" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">Several options look plausible.</li>
-      <li data-reveal data-reveal-delay="300" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">Seniority, reputation or politics make candor harder.</li>
-      <li data-reveal data-reveal-delay="400" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">Encouragement is useful, but no longer enough.</li>
+      <li data-reveal="" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">The question is still unfinished.</li>
+      <li data-reveal="" data-reveal-delay="100" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">You know what you want and need the plan stress-tested.</li>
+      <li data-reveal="" data-reveal-delay="200" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">Several options look plausible.</li>
+      <li data-reveal="" data-reveal-delay="300" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">Seniority, reputation or politics make candor harder.</li>
+      <li data-reveal="" data-reveal-delay="400" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.6; opacity: 0.72;">Encouragement is useful, but no longer enough.</li>
     </ul>
   </section>
 
-  <section id="council" data-dark data-nav-ink="cream" style="background: #3A3E28; color: #F4F0E8; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(20px, 3vw, 32px);">The Council</p>
+  <section id="council" data-dark="" data-nav-ink="cream" style="background: #3A3E28; color: #F4F0E8; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #D4A970; margin: 0 0 clamp(20px, 3vw, 32px);">The Council</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 6vw, 80px); align-items: center;">
       <div>
-        <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(34px, 5vw, 68px); line-height: 1.04; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Six women. One deliberately composed <em style="font-style: italic; color: #A97A43;">Council.</em></h2>
-        <p data-reveal data-reveal-delay="180" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; color: rgba(244,240,232,0.85);">Women are placed around what they are navigating, not simply what they do.</p>
-        <p data-reveal data-reveal-delay="180" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; color: rgba(244,240,232,0.85);">Enough shared context to understand each other. Enough difference to interrupt habitual thinking.</p>
+        <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(34px, 5vw, 68px); line-height: 1.04; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Six women. One deliberately composed <em style="font-style: italic; color: #A97A43;">Council.</em></h2>
+        <p data-reveal="" data-reveal-delay="180" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; color: rgba(244,240,232,0.85);">Women are placed around what they are navigating, not simply what they do.</p>
+        <p data-reveal="" data-reveal-delay="180" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; color: rgba(244,240,232,0.85);">Enough shared context to understand each other. Enough difference to interrupt habitual thinking.</p>
       </div>
       <div ref="{{ ringRef }}" aria-hidden="true" style="position: relative; width: 100%; max-width: 340px; aspect-ratio: 1; margin: 0 auto; justify-self: center;">
         <div style="position: absolute; inset: 12%; border: 1px solid rgba(244,240,232,0.18); border-radius: 50%;"></div>
@@ -152,36 +152,36 @@
       </div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(24px, 3.5vw, 44px); margin-top: clamp(48px, 7vw, 88px);">
-      <p data-reveal style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Six women</p>
-      <p data-reveal data-reveal-delay="80" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">90 minutes monthly, on Zoom</p>
-      <p data-reveal data-reveal-delay="160" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">A neutral facilitator</p>
-      <p data-reveal data-reveal-delay="240" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Shared Council principles</p>
-      <p data-reveal data-reveal-delay="320" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Continuity across sessions</p>
-      <p data-reveal data-reveal-delay="400" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Private reflection before and after</p>
+      <p data-reveal="" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Six women</p>
+      <p data-reveal="" data-reveal-delay="80" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">90 minutes monthly, on Zoom</p>
+      <p data-reveal="" data-reveal-delay="160" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">A neutral facilitator</p>
+      <p data-reveal="" data-reveal-delay="240" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Shared Council principles</p>
+      <p data-reveal="" data-reveal-delay="320" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Continuity across sessions</p>
+      <p data-reveal="" data-reveal-delay="400" style="border-top: 1px solid rgba(244,240,232,0.22); padding-top: 16px; margin: 0; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; color: rgba(244,240,232,0.88);">Private reflection before and after</p>
     </div>
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px; margin-top: clamp(44px, 6vw, 72px); padding-top: clamp(32px, 4vw, 44px); border-top: 1px solid rgba(244,240,232,0.22);">
       <div style="max-width: 460px;">
         <p style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.7; margin: 0 0 6px; color: rgba(244,240,232,0.85);">The founder is not the facilitator.</p>
         <p style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.7; margin: 0; color: rgba(244,240,232,0.85);">The value has to exist in the Council itself.</p>
       </div>
-      <a href="./the-council.html" style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: #F4F0E8; border-bottom: 1px solid rgba(244,240,232,0.5); padding-bottom: 4px;" style-hover="border-color: #F4F0E8;">Explore The Council &rarr;</a>
+      <a href="./the-council.html" style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: #F4F0E8; border-bottom: 1px solid rgba(244,240,232,0.5); padding-bottom: 4px;" style-hover="border-color: #F4F0E8;">Explore The Council →</a>
     </div>
   </section>
 
   <section id="room" style="padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 62px); line-height: 1.06; margin: 0 0 clamp(28px, 4vw, 40px); max-width: 780px; text-wrap: balance;">What happens in the room?</h2>
-    <div data-reveal data-reveal-delay="150" style="max-width: 640px; margin-bottom: clamp(44px, 6vw, 72px);">
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 62px); line-height: 1.06; margin: 0 0 clamp(28px, 4vw, 40px); max-width: 780px; text-wrap: balance;">What happens in the room?</h2>
+    <div data-reveal="" data-reveal-delay="150" style="max-width: 640px; margin-bottom: clamp(44px, 6vw, 72px);">
       <p style="font-size: clamp(17px, 1.9vw, 20px); line-height: 1.8; margin: 0 0 12px; opacity: 0.72;">You bring the decision, question or tension occupying your thinking.</p>
       <p style="font-size: clamp(17px, 1.9vw, 20px); line-height: 1.8; margin: 0; opacity: 0.72;">The other five are not there to tell you what to do. They:</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 6vw, 80px); align-items: start;">
       <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid rgba(200,192,180,0.7);">
-        <li data-reveal style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Listen carefully.</li>
-        <li data-reveal style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Ask better questions.</li>
-        <li data-reveal style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Challenge an assumption.</li>
-        <li data-reveal style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Offer another perspective.</li>
-        <li data-reveal style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Notice what you may have overlooked.</li>
-        <li data-reveal style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Give you the &ldquo;what about?&rdquo;</li>
+        <li data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Listen carefully.</li>
+        <li data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Ask better questions.</li>
+        <li data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Challenge an assumption.</li>
+        <li data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Offer another perspective.</li>
+        <li data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Notice what you may have overlooked.</li>
+        <li data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.4; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(200,192,180,0.7);">Give you the “what about?”</li>
       </ul>
       <div>
         <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.7;">Agreement can be useful. So can disagreement.</p>
@@ -193,62 +193,62 @@
   </section>
 
   <section style="background: #EDE9DF; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(20px, 3vw, 32px);">Movement, not just a good conversation.</p>
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.8vw, 64px); line-height: 1.06; margin: 0 0 clamp(28px, 4vw, 40px); max-width: 820px; text-wrap: balance;">What changed because the room existed?</h2>
-    <div data-reveal data-reveal-delay="150" style="max-width: 620px; margin-bottom: clamp(44px, 6vw, 68px);">
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 clamp(20px, 3vw, 32px);">Movement, not just a good conversation.</p>
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.8vw, 64px); line-height: 1.06; margin: 0 0 clamp(28px, 4vw, 40px); max-width: 820px; text-wrap: balance;">What changed because the room existed?</h2>
+    <div data-reveal="" data-reveal-delay="150" style="max-width: 620px; margin-bottom: clamp(44px, 6vw, 68px);">
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 12px; opacity: 0.7;">Progress here is not assumed to mean promotion.</p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; opacity: 0.7;">It can be smaller, less linear and more specific.</p>
     </div>
     <ul style="list-style: none; margin: 0 0 clamp(40px, 6vw, 60px); padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: clamp(22px, 3vw, 36px);">
-      <li data-reveal style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">A question gets clearer.</li>
-      <li data-reveal data-reveal-delay="80" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">An assumption is challenged.</li>
-      <li data-reveal data-reveal-delay="160" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">A plan survives stress-testing.</li>
-      <li data-reveal data-reveal-delay="240" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">Action is taken &mdash; or consciously declined.</li>
+      <li data-reveal="" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">A question gets clearer.</li>
+      <li data-reveal="" data-reveal-delay="80" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">An assumption is challenged.</li>
+      <li data-reveal="" data-reveal-delay="160" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">A plan survives stress-testing.</li>
+      <li data-reveal="" data-reveal-delay="240" style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 16px; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; opacity: 0.75;">Action is taken — or consciously declined.</li>
     </ul>
     <p style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0; max-width: 780px;">We are interested in what challenge changes, not simply whether the conversation felt good.</p>
   </section>
 
   <section style="padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 6vw, 80px); align-items: start;">
     <div>
-      <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.4vw, 58px); line-height: 1.06; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Something consequential is <em style="font-style: italic; color: #A97A43;">in play.</em></h2>
-      <p data-reveal data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 12px; opacity: 0.7;">Concentric is for professionally established women at an inflection point.</p>
-      <p data-reveal data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 28px; opacity: 0.7;">Not defined by title, industry or generation.</p>
-      <p data-reveal data-reveal-delay="220" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(19px, 2.2vw, 24px); line-height: 1.5; margin: 0;">You do not need a finished question. Some of the most useful ones are unfinished.</p>
+      <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.4vw, 58px); line-height: 1.06; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Something consequential is <em style="font-style: italic; color: #A97A43;">in play.</em></h2>
+      <p data-reveal="" data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 12px; opacity: 0.7;">Concentric is for professionally established women at an inflection point.</p>
+      <p data-reveal="" data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 28px; opacity: 0.7;">Not defined by title, industry or generation.</p>
+      <p data-reveal="" data-reveal-delay="220" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(19px, 2.2vw, 24px); line-height: 1.5; margin: 0;">You do not need a finished question. Some of the most useful ones are unfinished.</p>
     </div>
     <div>
-      <p style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #A97A43; margin: 0 0 24px;">You might be</p>
+      <p style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 24px;">You might be</p>
       <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid rgba(200,192,180,0.7);">
-        <li data-reveal style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Considering a role or career change.</li>
-        <li data-reveal data-reveal-delay="80" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Facing redundancy, re-entry or a new chapter.</li>
-        <li data-reveal data-reveal-delay="160" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Leaving a successful path for something different.</li>
-        <li data-reveal data-reveal-delay="240" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Clear on the destination, uncertain about the route.</li>
-        <li data-reveal data-reveal-delay="320" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Noticing that something no longer fits.</li>
+        <li data-reveal="" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Considering a role or career change.</li>
+        <li data-reveal="" data-reveal-delay="80" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Facing redundancy, re-entry or a new chapter.</li>
+        <li data-reveal="" data-reveal-delay="160" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Leaving a successful path for something different.</li>
+        <li data-reveal="" data-reveal-delay="240" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Clear on the destination, uncertain about the route.</li>
+        <li data-reveal="" data-reveal-delay="320" style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.5; padding: 16px 0; border-bottom: 1px solid rgba(200,192,180,0.7); opacity: 0.75;">Noticing that something no longer fits.</li>
       </ul>
     </div>
   </section>
 
-  <section id="edition" data-dark data-nav-ink="cream" style="background: #3A3E28; color: #F4F0E8; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(20px, 3vw, 32px);">Edition One</p>
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(36px, 5.6vw, 84px); line-height: 1.02; margin: 0 0 clamp(28px, 4vw, 40px); max-width: 900px; text-wrap: balance;">The first Concentric Councils.</h2>
-    <div data-reveal data-reveal-delay="150" style="max-width: 640px; margin-bottom: clamp(48px, 7vw, 84px);">
+  <section id="edition" data-dark="" data-nav-ink="cream" style="background: #3A3E28; color: #F4F0E8; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #D4A970; margin: 0 0 clamp(20px, 3vw, 32px);">Edition One</p>
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(36px, 5.6vw, 84px); line-height: 1.02; margin: 0 0 clamp(28px, 4vw, 40px); max-width: 900px; text-wrap: balance;">The first Concentric Councils.</h2>
+    <div data-reveal="" data-reveal-delay="150" style="max-width: 640px; margin-bottom: clamp(48px, 7vw, 84px);">
       <p style="font-size: clamp(17px, 1.9vw, 20px); line-height: 1.8; margin: 0 0 12px; color: rgba(244,240,232,0.85);">Edition One is a pilot, not proof.</p>
       <p style="font-size: clamp(17px, 1.9vw, 20px); line-height: 1.8; margin: 0; color: rgba(244,240,232,0.85);">Founding members are helping us test the model rather than experience a finished one.</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(32px, 4.5vw, 56px);">
-      <div data-reveal style="border-top: 1px solid rgba(244,240,232,0.28); padding-top: clamp(20px, 3vw, 28px);">
+      <div data-reveal="" style="border-top: 1px solid rgba(244,240,232,0.28); padding-top: clamp(20px, 3vw, 28px);">
         <h3 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.2; margin: 0 0 16px;">Transition</h3>
-        <p style="font-size: 17px; line-height: 1.75; margin: 0 0 24px; color: rgba(244,240,232,0.82);">A significant change in professional direction &mdash; moving between roles, sectors or ways of working; redundancy or re-entry; or leaving something established.</p>
-        <p style="font-size: 14px; letter-spacing: 0.06em; margin: 0; color: #A97A43;">$75/month &mdash; founding rate</p>
+        <p style="font-size: 17px; line-height: 1.75; margin: 0 0 24px; color: rgba(244,240,232,0.82);">A significant change in professional direction — moving between roles, sectors or ways of working; redundancy or re-entry; or leaving something established.</p>
+        <p style="font-size: 14px; letter-spacing: 0.06em; margin: 0; color: #D4A970;">$75/month — founding rate</p>
       </div>
-      <div data-reveal data-reveal-delay="120" style="border-top: 1px solid rgba(244,240,232,0.28); padding-top: clamp(20px, 3vw, 28px);">
+      <div data-reveal="" data-reveal-delay="120" style="border-top: 1px solid rgba(244,240,232,0.28); padding-top: clamp(20px, 3vw, 28px);">
         <h3 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.2; margin: 0 0 16px;">Visibility &amp; Momentum</h3>
-        <p style="font-size: 17px; line-height: 1.75; margin: 0 0 24px; color: rgba(244,240,232,0.82);">Not necessarily changing direction, but thinking seriously about what comes next &mdash; greater visibility, a larger remit, a different kind of influence, or progress that has become less obvious.</p>
-        <p style="font-size: 14px; letter-spacing: 0.06em; margin: 0; color: #A97A43;">$75/month &mdash; founding rate</p>
+        <p style="font-size: 17px; line-height: 1.75; margin: 0 0 24px; color: rgba(244,240,232,0.82);">Not necessarily changing direction, but thinking seriously about what comes next — greater visibility, a larger remit, a different kind of influence, or progress that has become less obvious.</p>
+        <p style="font-size: 14px; letter-spacing: 0.06em; margin: 0; color: #D4A970;">$75/month — founding rate</p>
       </div>
-      <div data-reveal data-reveal-delay="240" style="border-top: 1px solid rgba(244,240,232,0.28); padding-top: clamp(20px, 3vw, 28px);">
+      <div data-reveal="" data-reveal-delay="240" style="border-top: 1px solid rgba(244,240,232,0.28); padding-top: clamp(20px, 3vw, 28px);">
         <h3 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.2; margin: 0 0 16px;">Recalibration</h3>
-        <p style="font-size: 17px; line-height: 1.75; margin: 0 0 24px; color: rgba(244,240,232,0.82);">Reconsidering the shape of a professional life &mdash; what stays, what changes, what gets deprioritized, and whether the version of success you were working toward is still the one you want.</p>
-        <p style="font-size: 14px; letter-spacing: 0.06em; margin: 0; color: #A97A43;">$75/month &mdash; founding rate</p>
+        <p style="font-size: 17px; line-height: 1.75; margin: 0 0 24px; color: rgba(244,240,232,0.82);">Reconsidering the shape of a professional life — what stays, what changes, what gets deprioritized, and whether the version of success you were working toward is still the one you want.</p>
+        <p style="font-size: 14px; letter-spacing: 0.06em; margin: 0; color: #D4A970;">$75/month — founding rate</p>
       </div>
     </div>
     <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px; margin-top: clamp(44px, 6vw, 72px); padding-top: clamp(28px, 4vw, 40px); border-top: 1px solid rgba(244,240,232,0.22);">
@@ -256,38 +256,38 @@
         <p style="font-size: 16px; line-height: 1.7; margin: 0 0 6px; color: rgba(244,240,232,0.75);">Founding rates remain locked while membership is continuous.</p>
         <p style="font-size: 16px; line-height: 1.7; margin: 0; color: rgba(244,240,232,0.75);">Edition One begins with a three-month commitment.</p>
       </div>
-      <a href="./apply.html" style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: #F4F0E8; border: 1px solid rgba(244,240,232,0.5); padding: 15px 30px;" style-hover="background: #F4F0E8; color: #3A3E28;">Apply for placement &rarr;</a>
+      <a href="./apply.html" style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: #F4F0E8; border: 1px solid rgba(244,240,232,0.5); padding: 15px 30px;" style-hover="background: #F4F0E8; color: #3A3E28;">Apply for placement →</a>
     </div>
   </section>
 
   <section style="padding: clamp(80px, 11vw, 140px) clamp(20px, 5vw, 52px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 6vw, 80px); align-items: start;">
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 60px); line-height: 1.04; margin: 0; text-wrap: balance;">Placement, <em style="font-style: italic; color: #A97A43;">not sign-up.</em></h2>
-    <div data-reveal data-reveal-delay="150">
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 60px); line-height: 1.04; margin: 0; text-wrap: balance;">Placement, <em style="font-style: italic; color: #A97A43;">not sign-up.</em></h2>
+    <div data-reveal="" data-reveal-delay="150">
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.7;">Concentric is deliberately composed. It begins with a short application followed by a Placement Conversation.</p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.7;">We want to understand what you are navigating and what your perspective might add to the women already being considered.</p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 32px; opacity: 0.7;">Placement is decided around the Council as a whole, not individual eligibility.</p>
-      <a href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 16px 32px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for placement &rarr;</a>
+      <a href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 16px 32px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for placement →</a>
     </div>
   </section>
 
   <section style="background: #EDE9DF; padding: clamp(80px, 11vw, 140px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #281B2E; margin: 0 0 clamp(20px, 3vw, 32px);">What we are testing</p>
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 54px); line-height: 1.08; margin: 0 0 clamp(40px, 6vw, 64px); max-width: 720px; text-wrap: balance;">A pilot should answer questions.</h2>
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #281B2E; margin: 0 0 clamp(20px, 3vw, 32px);">What we are testing</p>
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 54px); line-height: 1.08; margin: 0 0 clamp(40px, 6vw, 64px); max-width: 720px; text-wrap: balance;">A pilot should answer questions.</h2>
     <ul style="list-style: none; margin: 0 0 clamp(36px, 5vw, 56px); padding: 0; display: flex; flex-direction: column; border-top: 1px solid rgba(40,27,46,0.25);">
-      <li data-reveal style="font-size: clamp(16px, 1.9vw, 20px); line-height: 1.55; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(40,27,46,0.15); opacity: 0.8;">Can deliberately composed strangers develop enough trust for useful challenge?</li>
-      <li data-reveal style="font-size: clamp(16px, 1.9vw, 20px); line-height: 1.55; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(40,27,46,0.15); opacity: 0.8;">Does that challenge change thinking or create movement?</li>
-      <li data-reveal style="font-size: clamp(16px, 1.9vw, 20px); line-height: 1.55; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(40,27,46,0.15); opacity: 0.8;">Is six women, 90 minutes and a monthly rhythm the right architecture?</li>
+      <li data-reveal="" style="font-size: clamp(16px, 1.9vw, 20px); line-height: 1.55; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(40,27,46,0.15); opacity: 0.8;">Can deliberately composed strangers develop enough trust for useful challenge?</li>
+      <li data-reveal="" style="font-size: clamp(16px, 1.9vw, 20px); line-height: 1.55; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(40,27,46,0.15); opacity: 0.8;">Does that challenge change thinking or create movement?</li>
+      <li data-reveal="" style="font-size: clamp(16px, 1.9vw, 20px); line-height: 1.55; padding: clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid rgba(40,27,46,0.15); opacity: 0.8;">Is six women, 90 minutes and a monthly rhythm the right architecture?</li>
     </ul>
     <p style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0; color: #281B2E;">Edition One is a test, not proof.</p>
   </section>
 
-  <section id="evidence" data-dark data-nav-ink="cream" style="background: #281B2E; color: #F6F1E8; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(20px, 3vw, 32px);">The Evidence Base</p>
-    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 60px); line-height: 1.06; margin: 0 0 clamp(36px, 5vw, 56px); max-width: 860px; text-wrap: balance;">Concentric began with a question.</h2>
+  <section id="evidence" data-dark="" data-nav-ink="cream" style="background: #281B2E; color: #F6F1E8; padding: clamp(80px, 11vw, 150px) clamp(20px, 5vw, 52px);">
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #D4A970; margin: 0 0 clamp(20px, 3vw, 32px);">The Evidence Base</p>
+    <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.6vw, 60px); line-height: 1.06; margin: 0 0 clamp(36px, 5vw, 56px); max-width: 860px; text-wrap: balance;">Concentric began with a question.</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 6vw, 80px); align-items: start;">
       <div>
-        <p data-reveal data-reveal-delay="120" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0 0 clamp(36px, 5vw, 52px);">What is missing from the professional lives of women who already have careers, networks, mentors and people around them?</p>
-        <div data-reveal data-reveal-delay="200" style="border-top: 1px solid rgba(246,241,232,0.25); padding-top: 20px;">
+        <p data-reveal="" data-reveal-delay="120" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0 0 clamp(36px, 5vw, 52px);">What is missing from the professional lives of women who already have careers, networks, mentors and people around them?</p>
+        <div data-reveal="" data-reveal-delay="200" style="border-top: 1px solid rgba(246,241,232,0.25); padding-top: 20px;">
           <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(44px, 6vw, 76px); line-height: 1; margin: 0 0 10px; color: #A97A43;">67 women</p>
           <p style="font-size: 16px; line-height: 1.6; margin: 0; color: rgba(246,241,232,0.7);">Our first US research study.</p>
         </div>
@@ -296,70 +296,70 @@
         <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; color: rgba(246,241,232,0.85);">Since then, we have continued the inquiry through published evidence, academics and researchers, external practitioner perspectives and placement conversations.</p>
         <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; color: rgba(246,241,232,0.85);">We are interested in where those perspectives converge. Where they do not. And where our own assumptions need challenging.</p>
         <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 32px; color: rgba(246,241,232,0.85);">Edition One adds something different: evidence from what actually happens in the room.</p>
-        <a href="./research-report.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: #F6F1E8; border: 1px solid rgba(246,241,232,0.45); padding: 15px 30px;" style-hover="background: #F6F1E8; color: #281B2E;">Explore The Evidence Base &rarr;</a>
+        <a href="./research-report.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: #F6F1E8; border: 1px solid rgba(246,241,232,0.45); padding: 15px 30px;" style-hover="background: #F6F1E8; color: #281B2E;">Explore The Evidence Base →</a>
       </div>
     </div>
   </section>
 
   <section id="journal" style="padding: clamp(80px, 11vw, 140px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #281B2E; margin: 0 0 clamp(20px, 3vw, 32px);">The Journal</p>
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #281B2E; margin: 0 0 clamp(20px, 3vw, 32px);">The Journal</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(40px, 6vw, 80px); align-items: start;">
       <div>
-        <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.06; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Questions worth <em style="font-style: italic; color: #A97A43;">staying with.</em></h2>
-        <p data-reveal data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.7;">The Journal examines the ideas underneath Concentric: challenge, candor, trust, difference, decision-making, professional transition and the limits of networks.</p>
-        <p data-reveal data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; opacity: 0.7;">It is also where we interrogate our own assumptions as Concentric develops.</p>
+        <h2 data-reveal="" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.06; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Questions worth <em style="font-style: italic; color: #A97A43;">staying with.</em></h2>
+        <p data-reveal="" data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.7;">The Journal examines the ideas underneath Concentric: challenge, candor, trust, difference, decision-making, professional transition and the limits of networks.</p>
+        <p data-reveal="" data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; opacity: 0.7;">It is also where we interrogate our own assumptions as Concentric develops.</p>
       </div>
       <div>
-        <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.45; margin: 0 0 16px;">Latest</p>
+        <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.78; margin: 0 0 16px;">Latest</p>
         <div style="display: flex; flex-direction: column; border-top: 1px solid rgba(200,192,180,0.7);">
-          <a data-reveal href="./journal/open-inquiry.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
+          <a data-reveal="" href="./journal/open-inquiry.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
             <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(21px, 2.4vw, 27px); line-height: 1.25; margin: 0 0 6px;">Open Inquiry</p>
-            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.55;">What we are still trying to find out.</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.78;">What we are still trying to find out.</p>
           </a>
-          <a data-reveal data-reveal-delay="100" href="./journal/why-six.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
+          <a data-reveal="" data-reveal-delay="100" href="./journal/why-six.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
             <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(21px, 2.4vw, 27px); line-height: 1.25; margin: 0 0 6px;">Why Six</p>
-            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.55;">The evidence for small peer circles.</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.78;">The evidence for small peer circles.</p>
           </a>
-          <a data-reveal data-reveal-delay="200" href="./journal/the-neutral-zone.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
+          <a data-reveal="" data-reveal-delay="200" href="./journal/the-neutral-zone.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
             <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(21px, 2.4vw, 27px); line-height: 1.25; margin: 0 0 6px;">The Neutral Zone</p>
-            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.55;">The space between what was and what comes next.</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.78;">The space between what was and what comes next.</p>
           </a>
         </div>
         <sc-if value="{{ journalExpanded }}" hint-placeholder-val="{{ false }}">
         <div style="display: flex; flex-direction: column;">
           <a href="./journal/several-selves.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
             <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(21px, 2.4vw, 27px); line-height: 1.25; margin: 0 0 6px;">Several Selves</p>
-            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.55;">Professional identity in transition.</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.78;">Professional identity in transition.</p>
           </a>
           <a href="./journal/the-room-full-of-women.html" style="display: block; padding: clamp(18px, 2.4vw, 24px) 0; border-bottom: 1px solid rgba(200,192,180,0.7); text-decoration: none; color: inherit;" style-hover="color: #A97A43;">
             <p style="font-family: 'Recoleta', Georgia, serif; font-size: clamp(21px, 2.4vw, 27px); line-height: 1.25; margin: 0 0 6px;">The Room Full of Women</p>
-            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.55;">Difference, trust and useful challenge.</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; opacity: 0.78;">Difference, trust and useful challenge.</p>
           </a>
         </div>
         </sc-if>
-        <button onClick="{{ toggleJournal }}" style="align-self: flex-start; margin-top: 24px; background: transparent; border: none; padding: 6px 0; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A97A43; cursor: pointer; font-family: inherit;">{{ journalLabel }}</button>
+        <button onClick="{{ toggleJournal }}" style="align-self: flex-start; margin-top: 24px; background: transparent; border: none; padding: 6px 0; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #8A5F2E; cursor: pointer; font-family: inherit;">{{ journalLabel }}</button>
       </div>
     </div>
   </section>
 
   <section style="padding: clamp(90px, 12vw, 160px) clamp(20px, 5vw, 52px);">
-    <p data-reveal style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(28px, 4vw, 44px);">Who challenges you?</p>
-    <div data-reveal data-reveal-delay="350" style="max-width: 900px;">
+    <p data-reveal="" style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 clamp(28px, 4vw, 44px);">Who challenges you?</p>
+    <div data-reveal="" data-reveal-delay="350" style="max-width: 900px;">
       <p style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(28px, 4vw, 52px); line-height: 1.14; margin: 0 0 20px; text-wrap: balance;">Someone with enough context to understand what is at stake.</p>
       <p style="font-size: clamp(17px, 2vw, 21px); line-height: 1.7; margin: 0 0 8px; opacity: 0.72;">Enough distance to see what you might not.</p>
       <p style="font-size: clamp(17px, 2vw, 21px); line-height: 1.7; margin: 0 0 8px; opacity: 0.72;">Enough curiosity to ask the question.</p>
       <p style="font-size: clamp(17px, 2vw, 21px); line-height: 1.7; margin: 0; opacity: 0.72;">And no vested interest in what you decide.</p>
     </div>
-    <div data-reveal data-reveal-delay="700" style="margin-top: clamp(40px, 6vw, 64px);">
-      <p style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.7; margin: 0 0 32px; opacity: 0.55;">Six women. One deliberately composed Council.</p>
-      <a href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 18px 36px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for Edition One &rarr;</a>
+    <div data-reveal="" data-reveal-delay="700" style="margin-top: clamp(40px, 6vw, 64px);">
+      <p style="font-size: clamp(16px, 1.8vw, 19px); line-height: 1.7; margin: 0 0 32px; opacity: 0.78;">Six women. One deliberately composed Council.</p>
+      <a href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 18px 36px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for Edition One →</a>
     </div>
   </section>
 
-  <footer data-dark data-nav-ink="cream" style="background: #3A3E28; color: #F4F0E8; padding: clamp(64px, 9vw, 88px) clamp(20px, 5vw, 52px) 44px;">
+  <footer data-dark="" data-nav-ink="cream" style="background: #3A3E28; color: #F4F0E8; padding: clamp(64px, 9vw, 88px) clamp(20px, 5vw, 52px) 44px;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(36px, 5vw, 56px); margin-bottom: clamp(48px, 7vw, 64px); align-items: start;">
       <div>
-        <img src="./assets/concentric-lockup-cream-nav.png" alt="Concentric" style="height: 40px; width: auto; display: block; margin-bottom: 22px;" />
+        <img src="./assets/concentric-lockup-cream-nav.png" alt="Concentric" style="height: 40px; width: auto; display: block; margin-bottom: 22px;">
         <div style="display: flex; flex-direction: column; gap: 6px;">
           <p style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; margin: 0; color: rgba(244,240,232,0.65);">Research-led.</p>
           <p style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; margin: 0; color: rgba(244,240,232,0.65);">Evidence-informed.</p>

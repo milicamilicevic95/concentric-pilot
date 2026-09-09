@@ -12,7 +12,7 @@
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; background: #F4F0E8; -webkit-font-smoothing: antialiased; }
-  a { color: #A97A43; }
+  a { color: #8A5F2E; }
   a:hover { color: #7d5c30; }
   a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #A97A43; outline-offset: 3px; }
   input::placeholder { color: rgba(32,33,31,0.35); }
@@ -32,13 +32,13 @@
   <main style="flex: 1; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(44px, 6vw, 88px); padding: clamp(56px, 8vw, 110px) clamp(20px, 5vw, 52px) clamp(72px, 9vw, 120px); align-items: start; max-width: 1320px; margin: 0 auto; width: 100%;">
 
     <div>
-      <p style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(20px, 3vw, 32px);">Edition One</p>
+      <p style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 clamp(20px, 3vw, 32px);">Edition One</p>
       <h1 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(34px, 5vw, 68px); line-height: 1.04; margin: 0 0 clamp(24px, 3vw, 36px); text-wrap: balance;">Apply for <em style="font-style: italic; color: #A97A43;">placement.</em></h1>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.72;">Concentric is deliberately composed. This short application is the first step; it is followed by a Placement Conversation.</p>
       <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 clamp(36px, 5vw, 52px); opacity: 0.72;">Placement is decided around the Council as a whole, not individual eligibility.</p>
 
       <div style="border-top: 1px solid rgba(200,192,180,0.7); padding-top: 24px;">
-        <p style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #A97A43; margin: 0 0 20px;">What happens next</p>
+        <p style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #8A5F2E; margin: 0 0 20px;">What happens next</p>
         <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px;">
           <li style="display: flex; gap: 16px; align-items: baseline;">
             <span style="font-family: 'Recoleta', Georgia, serif; font-size: 18px; color: #A97A43; min-width: 20px;">01</span>
@@ -60,23 +60,23 @@
     <form onSubmit="{{ submit }}" novalidate="{{ true }}" style="display: flex; flex-direction: column;">
       <div style="display: flex; flex-direction: column; gap: clamp(24px, 3vw, 32px);">
         <div>
-          <label for="fn" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.5; margin-bottom: 10px;">First name</label>
+          <label for="fn" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.74; margin-bottom: 10px;">First name</label>
           <input id="fn" name="firstName" type="text" required autocomplete="given-name" placeholder="Your first name" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(200,192,180,0.9); padding: 12px 0; font-size: 17px; font-family: inherit; color: #20211F; outline: none;" />
         </div>
         <div>
-          <label for="ln" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.5; margin-bottom: 10px;">Last name</label>
+          <label for="ln" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.74; margin-bottom: 10px;">Last name</label>
           <input id="ln" name="lastName" type="text" required autocomplete="family-name" placeholder="Your last name" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(200,192,180,0.9); padding: 12px 0; font-size: 17px; font-family: inherit; color: #20211F; outline: none;" />
         </div>
         <div>
-          <label for="em" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.5; margin-bottom: 10px;">Email</label>
+          <label for="em" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.74; margin-bottom: 10px;">Email</label>
           <input id="em" name="email" type="email" required autocomplete="email" placeholder="you@email.com" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(200,192,180,0.9); padding: 12px 0; font-size: 17px; font-family: inherit; color: #20211F; outline: none;" />
         </div>
         <div>
-          <label for="loc" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.5; margin-bottom: 10px;">Where are you currently based?</label>
+          <label for="loc" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.74; margin-bottom: 10px;">Where are you currently based?</label>
           <input id="loc" name="location" type="text" required placeholder="City, country" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(200,192,180,0.9); padding: 12px 0; font-size: 17px; font-family: inherit; color: #20211F; outline: none;" />
         </div>
         <div>
-          <label for="cn" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.5; margin-bottom: 10px;">What are you primarily navigating?</label>
+          <label for="cn" style="display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.74; margin-bottom: 10px;">What are you primarily navigating?</label>
           <select id="cn" name="navigating" required style="width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(200,192,180,0.9); padding: 12px 0; font-size: 17px; font-family: inherit; color: #20211F; outline: none; appearance: none;">
             <option value="">Select one</option>
             <option value="transition">A significant change in professional direction</option>
@@ -91,7 +91,7 @@
       <p role="alert" style="font-size: 15px; line-height: 1.6; margin: 24px 0 0; padding: 14px 18px; border-left: 2px solid #A97A43; background: rgba(169,122,67,0.08); color: #20211F;">{{ error }}</p>
       </sc-if>
       <button type="submit" disabled="{{ sending }}" style="margin-top: clamp(36px, 5vw, 48px); width: 100%; background: #20211F; color: #F4F0E8; border: none; padding: 20px 32px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; font-family: inherit;" style-hover="background: #3A3E28;">{{ submitLabel }}</button>
-      <p style="font-size: 14px; line-height: 1.65; opacity: 0.5; margin: 20px 0 0;">Edition One is $75/month at the founding rate, beginning with a three-month commitment. Questions before you apply? <a href="mailto:mila@wingsoflegacy.co" style="color: #20211F; text-decoration: none; border-bottom: 1px solid rgba(32,33,31,0.3);">mila@wingsoflegacy.co</a></p>
+      <p style="font-size: 14px; line-height: 1.65; opacity: 0.74; margin: 20px 0 0;">Edition One is $75/month at the founding rate, beginning with a three-month commitment. Questions before you apply? <a href="mailto:mila@wingsoflegacy.co" style="color: #20211F; text-decoration: none; border-bottom: 1px solid rgba(32,33,31,0.3);">mila@wingsoflegacy.co</a></p>
     </form>
     </sc-if>
 
