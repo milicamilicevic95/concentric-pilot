@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="./assets/concentric-fonts.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F4F0E8; -webkit-font-smoothing: antialiased; }
+  html { scroll-behavior: smooth; }
+  a { color: #A97A43; }
+  a:hover { color: #7d5c30; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #A97A43; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background: #F4F0E8; color: #20211F; overflow-x: clip;">
+
+  <nav style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px clamp(20px, 5vw, 52px); border-bottom: 1px solid rgba(200,192,180,0.5);">
+    <a href="./index.html" aria-label="Concentric home" style="display: flex; align-items: center; text-decoration: none;">
+      <img src="./assets/concentric-lockup-ink-nav.png" alt="Concentric" style="height: clamp(32px, 5vw, 44px); width: auto; display: block;" />
+    </a>
+    <div style="display: flex; align-items: center; gap: clamp(18px, 3vw, 32px);">
+      <a href="./index.html" style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #20211F; text-decoration: none; opacity: 0.7;" style-hover="opacity: 1;">&larr; Concentric</a>
+      <a href="./apply.html" style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #20211F; text-decoration: none; border-bottom: 1px solid #20211F; padding-bottom: 3px;">Apply</a>
+    </div>
+  </nav>
+
+  <section style="padding: clamp(56px, 8vw, 110px) clamp(20px, 5vw, 52px) clamp(64px, 8vw, 100px);">
+    <p data-reveal style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(24px, 3vw, 36px);">The Council</p>
+    <h1 data-reveal data-reveal-delay="250" style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(36px, 5.6vw, 84px); line-height: 1.02; max-width: 900px; margin: 0 0 clamp(28px, 4vw, 40px); text-wrap: balance;">How the room is <em style="font-style: italic; color: #A97A43;">built.</em></h1>
+    <p data-reveal data-reveal-delay="500" style="font-size: clamp(17px, 2vw, 21px); line-height: 1.7; margin: 0; max-width: 620px; opacity: 0.75;">Six women, 90 minutes once a month, and a set of deliberate choices behind each of those numbers. This page explains the choices, and what we are still testing about them.</p>
+  </section>
+
+  <section data-dark style="background: #3A3E28; color: #F4F0E8; padding: clamp(72px, 10vw, 130px) clamp(20px, 5vw, 52px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(36px, 6vw, 80px); align-items: start;">
+      <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.06; margin: 0; text-wrap: balance;">Why strangers?</h2>
+      <div>
+        <p data-reveal data-reveal-delay="150" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0 0 clamp(26px, 4vw, 36px);">Distance may be useful.</p>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; color: rgba(244,240,232,0.85);">The women in your Council do not work inside your organisation. They are not your oldest friends. They have not spent years reinforcing a particular version of who you are, and they do not need your decision to work for them.</p>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 clamp(26px, 4vw, 36px); color: rgba(244,240,232,0.85);">That does not automatically make strangers objective, and it does not guarantee useful challenge.</p>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; padding-top: clamp(22px, 3vw, 32px); border-top: 1px solid rgba(244,240,232,0.22); color: rgba(244,240,232,0.85);">Whether it does is one of the questions Edition One exists to answer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: clamp(72px, 10vw, 130px) clamp(20px, 5vw, 52px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(36px, 6vw, 80px); align-items: start;">
+      <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.06; margin: 0; text-wrap: balance;">Why six?</h2>
+      <div>
+        <p data-reveal data-reveal-delay="150" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0 0 clamp(26px, 4vw, 36px);">Small enough for depth. Large enough for difference.</p>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 14px; opacity: 0.72;">Six gives each Council multiple perspectives without turning the room into an audience. It also creates a meaningful constraint: every seat matters, and there is nowhere to sit quietly for 90 minutes.</p>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; opacity: 0.72;">Whether six women, 90 minutes and a monthly rhythm is the right architecture is something Edition One is designed to help answer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-dark style="background: #3A3E28; color: #F4F0E8; padding: clamp(72px, 10vw, 130px) clamp(20px, 5vw, 52px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(36px, 6vw, 80px); align-items: start;">
+      <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.06; margin: 0; text-wrap: balance;">Why a facilitator?</h2>
+      <div>
+        <p data-reveal data-reveal-delay="150" style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.45; margin: 0 0 clamp(26px, 4vw, 36px);">The thinking belongs to the Council.</p>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 clamp(26px, 4vw, 32px); color: rgba(244,240,232,0.85);">The facilitator does not coach the Council, does not provide the answer, and does not become the centre of the experience. Her role is to hold the conditions around the conversation:</p>
+        <ul style="list-style: none; margin: 0 0 clamp(26px, 4vw, 32px); padding: 0; display: flex; flex-wrap: wrap; gap: 10px clamp(18px, 3vw, 28px);">
+          <li style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A97A43;">Time</li>
+          <li style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A97A43;">Structure</li>
+          <li style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A97A43;">Participation</li>
+          <li style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A97A43;">Continuity</li>
+          <li style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A97A43;">Shared principles</li>
+        </ul>
+        <p style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0; padding-top: clamp(22px, 3vw, 32px); border-top: 1px solid rgba(244,240,232,0.22); color: rgba(244,240,232,0.85);">The founder is not the facilitator. The value has to exist in the Council itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #EDE9DF; padding: clamp(72px, 10vw, 130px) clamp(20px, 5vw, 52px);">
+    <p data-reveal style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #A97A43; margin: 0 0 clamp(20px, 3vw, 32px);">The Reflection Loop</p>
+    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(30px, 4.4vw, 58px); line-height: 1.06; margin: 0 0 clamp(24px, 3vw, 36px); max-width: 760px; text-wrap: balance;">A little thinking before. A little after.</h2>
+    <p data-reveal data-reveal-delay="150" style="font-size: clamp(16px, 1.9vw, 19px); line-height: 1.8; margin: 0 0 clamp(44px, 6vw, 72px); max-width: 620px; opacity: 0.72;">Three short prompts before the Council and three after. Not homework, not an assessment, not a coaching intake. Your reflections remain yours.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(36px, 5vw, 64px);">
+      <div data-reveal>
+        <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.45; margin: 0 0 18px;">Before</p>
+        <p style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.3vw, 26px); line-height: 1.4; margin: 0 0 16px; padding-top: 18px; border-top: 1px solid rgba(200,192,180,0.8);">What is occupying my thinking?</p>
+        <p style="font-size: 17px; line-height: 1.7; margin: 0; opacity: 0.6;">So you arrive with something real rather than assembling it in the first ten minutes.</p>
+      </div>
+      <div data-reveal data-reveal-delay="150">
+        <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.45; margin: 0 0 18px;">After</p>
+        <p style="font-family: 'Recoleta', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.3vw, 26px); line-height: 1.4; margin: 0 0 16px; padding-top: 18px; border-top: 1px solid rgba(200,192,180,0.8);">What changed in my thinking?</p>
+        <p style="font-size: 17px; line-height: 1.7; margin: 0; opacity: 0.6;">Captured while it is still fresh. Over time it becomes a record of how your thinking moved.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: clamp(80px, 11vw, 140px) clamp(20px, 5vw, 52px); text-align: center;">
+    <h2 data-reveal style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.8vw, 50px); line-height: 1.12; margin: 0 auto clamp(28px, 4vw, 40px); max-width: 720px; text-wrap: balance;">Six women. One deliberately composed <em style="font-style: italic; color: #A97A43;">Council.</em></h2>
+    <a data-reveal data-reveal-delay="250" href="./apply.html" style="display: inline-block; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; color: #20211F; border: 1px solid #20211F; padding: 18px 36px;" style-hover="background: #20211F; color: #F4F0E8;">Apply for Edition One &rarr;</a>
+  </section>
+
+  <footer style="background: #3A3E28; color: #F4F0E8; padding: clamp(40px, 6vw, 56px) clamp(20px, 5vw, 52px);">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px clamp(18px, 3vw, 32px);">
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,240,232,0.65);">Research-led.</span>
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,240,232,0.65);">Evidence-informed.</span>
+        <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,240,232,0.65);">Shaped by expert perspectives.</span>
+      </div>
+      <p style="font-size: 12px; margin: 0; color: rgba(244,240,232,0.6);">Concentric is an independent initiative created and operated by NexaStrategic LTD.</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.rootRef = React.createRef();
+  }
+
+  componentDidMount() { this.init(); }
+  componentDidUpdate() { this.init(); }
+
+  init() {
+    if (this.inited || !this.rootRef.current) return;
+    this.inited = true;
+    const root = this.rootRef.current;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+    const items = Array.from(root.querySelectorAll('[data-reveal]'));
+    items.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(14px)';
+    });
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        el.style.transition = 'opacity 700ms ease ' + d + 'ms, transform 700ms cubic-bezier(.2,.7,.2,1) ' + d + 'ms';
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        this.io.unobserve(el);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+    items.forEach((el) => this.io.observe(el));
+  }
+
+  componentWillUnmount() { if (this.io) this.io.disconnect(); }
+
+  renderVals() {
+    return { rootRef: this.rootRef };
+  }
+}
+</script>
+</body>
+</html>

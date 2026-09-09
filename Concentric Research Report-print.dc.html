@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; }
+  a { color: #A97A43; }
+  a:hover { color: #7d5c30; }
+  .page { font-family: 'Inter', sans-serif; color: #281B2E; background: #F6F1E8; position: relative; overflow: hidden; }
+  .eyebrow { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #A97A43; font-weight: 600; }
+  .pagehead { display: flex; align-items: center; justify-content: space-between; padding: 44px 72px 0; }
+  .pagenum { font-size: 11px; letter-spacing: 0.1em; color: #281B2E; opacity: 0.4; }
+  .rule { height: 1px; background: #D9D2C8; margin: 14px 72px 0; }
+  .pagefoot { position: absolute; bottom: 30px; left: 72px; right: 72px; display: flex; justify-content: space-between; align-items: center; font-size: 9.5px; letter-spacing: 0.04em; color: #281B2E; opacity: 0.45; border-top: 1px solid #D9D2C8; padding-top: 12px; }
+  h2.title { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 27px; line-height: 1.22; margin: 10px 0 0; color: #281B2E; }
+  .stat-tile { border: 1px solid #D9D2C8; padding: 20px 22px; flex: 1; }
+  .stat-num { font-family: 'Bodoni Moda', serif; font-size: 34px; color: #A97A43; line-height: 1; margin: 0 0 8px; }
+  .stat-label { font-size: 12.5px; line-height: 1.5; opacity: 0.78; }
+  .quote { font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 20px; line-height: 1.5; color: #281B2E; border-left: 3px solid #A97A43; padding-left: 24px; margin: 0; }
+  table.rtable { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.rtable th { background: #281B2E; color: #F6F1E8; text-align: left; padding: 10px 16px; font-weight: 500; letter-spacing: 0.03em; font-size: 12px; text-transform: uppercase; }
+  table.rtable td { padding: 10px 16px; border-bottom: 1px solid #D9D2C8; }
+  table.rtable tr:last-child td { border-bottom: none; }
+  .ringbg { position: absolute; border-radius: 50%; border: 1px solid rgba(246,241,232,0.14); }
+  .ringbg-dark { position: absolute; border-radius: 50%; border: 1px solid rgba(40,27,46,0.08); }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+
+<style>doc-page:not(:defined){visibility:hidden}</style>
+<doc-page size="letter">
+
+<section class="page" id="cover" style="background: #F6F1E8; color: #281B2E;">
+  <div class="ringbg-dark" style="width: 640px; height: 640px; top: -220px; right: -220px;"></div>
+  <div class="ringbg-dark" style="width: 440px; height: 440px; bottom: -160px; left: -140px;"></div>
+  <div style="position: relative; height: 100%; display: flex; flex-direction: column; justify-content: space-between; padding: 72px;">
+    <div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span class="eyebrow" style="color: #A97A43;">Wings of Legacy</span>
+        <span style="opacity: 0.4; font-size: 11px;">|</span>
+        <span class="eyebrow" style="color: #281B2E; opacity: 0.75;">Concentric</span>
+      </div>
+    </div>
+    <div>
+      <h1 style="font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 56px; line-height: 1.08; margin: 0 0 22px; max-width: 560px; color: #281B2E;">What You Told Us</h1>
+      <p style="font-size: 17px; line-height: 1.65; max-width: 440px; opacity: 0.8; margin: 0 0 28px;">A research report on the professional experiences of women navigating significant career moments.</p>
+      <p style="font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.6; margin: 0 0 40px;">July 2026 &middot; 67 Respondents &middot; United States</p>
+      <div style="display: flex; gap: 20px; max-width: 520px;">
+        <div style="border: 1px solid #D9D2C8; padding: 18px 20px; flex: 1;">
+          <p style="font-family: 'Bodoni Moda', serif; font-size: 32px; color: #A97A43; margin: 0 0 6px;">67</p>
+          <p style="font-size: 12px; opacity: 0.75; margin: 0;">women participated</p>
+        </div>
+        <div style="border: 1px solid #D9D2C8; padding: 18px 20px; flex: 1;">
+          <p style="font-family: 'Bodoni Moda', serif; font-size: 32px; color: #A97A43; margin: 0 0 6px;">4</p>
+          <p style="font-size: 12px; opacity: 0.75; margin: 0;">consistent themes identified</p>
+        </div>
+        <div style="border: 1px solid #D9D2C8; padding: 18px 20px; flex: 1;">
+          <p style="font-family: 'Bodoni Moda', serif; font-size: 32px; color: #A97A43; margin: 0 0 6px;">25&ndash;35</p>
+          <p style="font-size: 12px; opacity: 0.75; margin: 0;">largest age cohort represented</p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; font-size: 11px; opacity: 0.55;">
+      <span>mila@wingsoflegacy.co &middot; wingsoflegacy.co</span>
+      <span>01 / 12</span>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="p2">
+  <div class="pagehead"><span class="eyebrow">01 &mdash; Who Responded</span><span class="pagenum">02 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Respondent profile</h2>
+    <div style="border: 1px solid #D9D2C8; background: #FBF8F2; padding: 20px 24px; margin: 22px 0; font-size: 12.5px; line-height: 1.7; opacity: 0.85;">
+      <p style="margin: 0 0 6px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 11px; color: #A97A43;">Methodology</p>
+      <p style="margin: 0;">Data collected June&ndash;July 2026 via Meta lead forms (Instagram) and direct intake forms. 67 women participated across the United States. Age cohorts targeted: 22&ndash;25, 25&ndash;35, 35&ndash;45, and 45+. Questions addressed: primary professional challenge, available support, prior investment, employment status, unmet needs, and openness to peer group participation. All responses are anonymized.</p>
+    </div>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 16px;">Respondents ranged in age from 18 to 55 and above. The largest cohort fell within the 25&ndash;35 age range, representing approximately half the sample at 49%. Women aged 45 and above constituted the second largest group at 30%, followed by the 35&ndash;45 cohort at 16%. The remaining 5% were in the 18&ndash;25 or 22&ndash;25 range.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 16px;">Most respondents are employed full-time. A notable proportion are in professional transition: between roles, reassessing direction, or rebuilding following a position that proved unsustainable. A smaller group are self-employed or operating as founders. All respondents are based in the United States.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 26px;">Respondents share a professional moment rather than a job title or career stage: capable, experienced women navigating something significant with limited access to appropriate peer support.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 0 0 10px;">Age distribution of respondents</p>
+    <table class="rtable">
+      <thead><tr><th>Age cohort</th><th>n</th></tr></thead>
+      <tbody>
+        <tr><td>25&ndash;35</td><td>33</td></tr>
+        <tr><td>45+</td><td>20</td></tr>
+        <tr><td>35&ndash;45</td><td>11</td></tr>
+        <tr><td>22&ndash;25 / 18&ndash;25</td><td>3</td></tr>
+        <tr><td>Not disclosed</td><td>0</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size: 11px; opacity: 0.55; margin: 10px 0 0;">Figures represent number of respondents (n=67). All data anonymized.</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p3">
+  <div class="pagehead"><span class="eyebrow">02 &mdash; Theme One</span><span class="pagenum">03 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Direction uncertainty: questioning the path, not failing on it</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 20px 0 16px;">Sustained uncertainty about direction was the most prevalent theme. Respondents were not in acute crisis; the predominant concern was whether their current professional trajectory represented the right work, pointed in the right direction, toward outcomes they actually wanted.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 24px;">Women experiencing this rarely raise it at work. Expressing ambivalence about one's path carries reputational risk, particularly where performance and confidence are read as synonymous. Conventional professional development compounds the problem: its focus on skills acquisition and performance optimization presupposes a direction that many respondents were actively questioning.</p>
+    <p class="quote">&ldquo;Working out whether I am on the right career path at all.&rdquo;</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 30px 0 14px;">Supporting research</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">McKinsey and Lean In's Women in the Workplace report (2024) found that 66% of women report an absence of clear career advancement pathways within their organizations. Women consistently receive less career support, fewer development opportunities, and less active advocacy than their male counterparts, even where qualifications and stated ambition are equivalent.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">Research on the &ldquo;broken rung&rdquo; phenomenon demonstrates that for every 100 men promoted to first-level management, only 81 women receive the equivalent promotion. This initial disparity compounds progressively across career stages, creating a pipeline deficit that many women experience as a persistent, if undiagnosed, constraint on their professional development.</p>
+    <div style="display: flex; gap: 20px; margin-top: 6px;">
+      <div class="stat-tile"><p class="stat-num">66%</p><p class="stat-label">of women report the absence of a clear career advancement path within their organization</p></div>
+      <div class="stat-tile"><p class="stat-num">81/100</p><p class="stat-label">women promoted to first-level management for every 100 men</p></div>
+    </div>
+    <p style="font-size: 10.5px; opacity: 0.5; margin: 10px 0 0;">Source: McKinsey / Lean In, 2024</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p4">
+  <div class="pagehead"><span class="eyebrow">03 &mdash; Theme Two</span><span class="pagenum">04 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Burnout as a structural phenomenon, not an individual failing</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 20px 0 16px;">Eight respondents identified burnout explicitly as their primary professional challenge. A considerably larger number described equivalent experiences without using the term: sustained depletion following a demanding role, recovery from a position that proved unsustainable, or a period of transition initiated not by choice but by necessity.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 24px;">Public discourse frames burnout as a personal management failure, a deficit of individual resilience. The data says otherwise. Burnout among professional women is structural, driven by documented disparities in workload, scrutiny, cognitive burden, and how institutions respond when women signal fatigue.</p>
+    <p class="quote">&ldquo;Recovering from burnout or a role that drained me.&rdquo;</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 30px 0 14px;">Supporting research</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">Gallup's workplace research (2024&ndash;2025) reports that 59% of women experience burnout, compared to 46% of men. Among women in leadership roles specifically, the rate rises to 43%, versus 31% for men in equivalent positions, a gap of twelve percentage points that has remained consistent across multiple measurement periods. At management level, the differential is seven percentage points.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">Contributing factors identified in the literature include the disproportionate unpaid labor burden carried by women outside of paid employment, the systematic undervaluation of women's efficiency and output relative to that of male peers, and institutional cultures in which professional fatigue in women is interpreted as a personal limitation rather than a legitimate signal of unsustainable conditions. In 2024, 51% of women reported an increase in occupational stress relative to the preceding year.</p>
+    <div style="display: flex; gap: 16px; margin-top: 6px;">
+      <div class="stat-tile"><p class="stat-num">59%</p><p class="stat-label">of women report burnout vs 46% for men</p></div>
+      <div class="stat-tile"><p class="stat-num">43%</p><p class="stat-label">of women in leadership report burnout vs 31% of men</p></div>
+      <div class="stat-tile"><p class="stat-num">51%</p><p class="stat-label">of women report increased occupational stress year-on-year</p></div>
+    </div>
+    <p style="font-size: 10.5px; opacity: 0.5; margin: 10px 0 0;">Source: Gallup, 2024&ndash;2025</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p5">
+  <div class="pagehead"><span class="eyebrow">04 &mdash; Theme Three</span><span class="pagenum">05 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Professional isolation: managing difficulty alone</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 20px 0 16px;">Managing professional difficulty alone was the most consistent pattern across responses. Respondents described resolving problems independently, reluctance to disclose struggle in professional contexts, and an absence of peer relationships capable of providing substantive support at the relevant level of experience.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 24px;">This is not a personality trait. It is a rational adaptation to environments where acknowledging difficulty carries reputational risk, particularly for women already subject to elevated professional scrutiny. Managing professional challenge privately is rarely a preference. For most respondents, it was the only available option.</p>
+    <p class="quote">&ldquo;I figure it out alone. I do not want to look like I am struggling.&rdquo;</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 30px 0 14px;">Supporting research</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">Fortune and Infillion's research (2023&ndash;2024) found that 80% of women experience loneliness or isolation in professional contexts, with incidence highest among women under 35 and women of color. Fortune and Infillion's research found that 60% of women report that isolation intensifies as career seniority increases. It does not diminish with success.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">Research published in Frontiers in Psychology (2022) identifies three distinct forms of loneliness associated with career transitions: unintentional, deliberate, and experiential. Across all three categories, women tended to manage transition challenges privately, a pattern that deepens difficulty.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">Structured peer support produces measurable results. Controlled studies of peer mentoring programs show significantly higher self-efficacy for career advancement, improved work-life integration, and a stronger sense of professional inclusion. Research from Yale School of Management found that women with more female peers in their networks are measurably more likely to reach senior management, through shared professional intelligence, early access to information, and reciprocal advocacy.</p>
+    <div style="display: flex; gap: 20px; margin-top: 6px;">
+      <div class="stat-tile"><p class="stat-num">80%</p><p class="stat-label">of women experience loneliness or isolation in professional contexts</p></div>
+      <div class="stat-tile"><p class="stat-num">60%</p><p class="stat-label">report that isolation intensifies as career seniority increases</p></div>
+    </div>
+    <p style="font-size: 10.5px; opacity: 0.5; margin: 10px 0 0;">Source: Fortune / Infillion, 2023&ndash;2024</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p6">
+  <div class="pagehead"><span class="eyebrow">05 &mdash; Theme Four</span><span class="pagenum">06 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">The access gap: structural barriers to sponsorship and opportunity</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 20px 0 16px;">Several respondents identified the absence of access as a primary concern: access to professional opportunities, introductions to relevant networks, and entry to environments not otherwise available to them. This is distinct from a desire to network more. Respondents were describing the absence of active advocacy from individuals positioned to create substantive professional openings. They were not short of contacts. They lacked sponsors.</p>
+    <p class="quote">&ldquo;Access to opportunities, introductions, or rooms I cannot get into alone.&rdquo;</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 30px 0 14px;">Supporting research</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">Research from Women of Influence (2025) found that 73% of women who had received professional sponsorship advanced at a faster rate than those who had not. Yet despite 85% of women demonstrating an understanding of what sponsorship entails, only 45% have ever had access to a sponsor. The gap between awareness and access is structural in origin.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">The mechanism driving this gap is well documented. Professional sponsors tend to advocate for individuals who resemble them in background or profile, a phenomenon described in the organizational psychology literature as affinity bias. Given that the majority of senior leadership positions in most sectors remain held by men, this mechanism operates systematically to the disadvantage of women. The phenomenon has been described as over-mentoring and under-sponsoring: women receive advisory relationships in substantial numbers, but far less frequently receive the active advocacy that generates material career advancement.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">McKinsey's longitudinal data is unambiguous: when women receive equivalent career support to that available to men, the differential in stated ambition disappears entirely. The ambition gap closes when the support deficit does.</p>
+    <div style="display: flex; gap: 20px; margin-top: 6px;">
+      <div class="stat-tile"><p class="stat-num">73%</p><p class="stat-label">of sponsored women advance faster than unsponsored peers</p></div>
+      <div class="stat-tile"><p class="stat-num">45%</p><p class="stat-label">of women have ever had a sponsor, despite 85% knowing what it is</p></div>
+    </div>
+    <p style="font-size: 10.5px; opacity: 0.5; margin: 10px 0 0;">Source: Women of Influence, 2025; McKinsey Women in the Workplace, 2024</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p7">
+  <div class="pagehead"><span class="eyebrow">06 &mdash; What Respondents Need Most</span><span class="pagenum">07 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Primary needs identified across the respondent pool</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 20px 0 24px;">Across all 67 responses, each participant's primary professional need was categorized based on the totality of their answers. Career Reinvention and Career Clarity together represent the most frequently identified needs, accounting for more than half of respondents for whom a primary need could be clearly determined. Leadership-related challenges and visibility or access needs follow. 18 respondents are pending a placement conversation and have not yet been categorized.</p>
+    <table class="rtable">
+      <thead><tr><th>Primary need</th><th>n</th></tr></thead>
+      <tbody>
+        <tr><td>Career Reinvention</td><td>20</td></tr>
+        <tr><td>Career Clarity</td><td>13</td></tr>
+        <tr><td>Leadership Challenges</td><td>7</td></tr>
+        <tr><td>Visibility / Access</td><td>6</td></tr>
+        <tr><td>Career Momentum</td><td>3</td></tr>
+        <tr><td>Pending categorization</td><td>18</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size: 11px; opacity: 0.55; margin: 10px 0 26px;">Based on 49 respondents with a clearly identified primary need (n=67). &ldquo;Leadership Challenges&rdquo; combines responses related to leadership fatigue, workplace politics, executive visibility, and leadership recovery. 18 respondents pending categorization.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0;">Willingness to invest was present across the respondent pool, but conditional. Most had already invested in coaching programs, networking organizations, or professional communities that had not delivered peer relationships at the relevant level of experience or trust. Respondents who indicated readiness to invest again expressed a consistent condition: the value case had to be demonstrable before commitment.</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p8">
+  <div class="pagehead"><span class="eyebrow">07 &mdash; Concentric</span><span class="pagenum">08 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Concentric: a peer council for women navigating significant professional moments</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 18px 0 14px;">What this research confirms is specific: the predominant unmet need among professional women at inflection points is access to the right people. Not more information, not better tools. Peers who are navigating genuinely comparable circumstances, positioned to offer honest and informed perspective, with a reciprocal stake in each other's progress.</p>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 0 0 20px;">Concentric is a peer council built around that finding. It operates through small, structured circles of six women, meeting monthly, with a format designed to produce substantive professional exchange rather than networking activity. It is a program of Wings of Legacy.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 22px 0 10px; color: #A97A43;">The placement model</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">Each circle is assembled through a placement process rather than open enrollment. Prior to inclusion, each candidate participates in a placement conversation to assess professional profile, current circumstances, and group fit. Placement decisions are made on the basis of complementarity: women in similar professional moments, but with sufficiently different perspectives and experiences to generate productive exchange. The same stated need, as expressed by two different individuals, may call for substantially different placements in practice.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 22px 0 10px; color: #A97A43;">The evidence base for small peer groups</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 20px;">Research on social cognition, including Dunbar's work on the limits of meaningful relationships and subsequent applied studies in professional contexts, consistently identifies groups of five to seven as the range within which genuine disclosure, mutual accountability, and sustained engagement occur. Larger communities generate audiences. Small circles generate peers.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0;">Controlled research on structured peer mentoring programs demonstrates measurable outcomes: significantly higher self-efficacy for career advancement, greater sense of professional inclusion, improved work-life integration, and stronger development of mentoring capacity over time. A controlled trial published in PLOS ONE found that structured group peer mentoring produced substantially stronger outcomes than unstructured or individually oriented approaches across all measured dimensions. Yale School of Management research found that women with more female peers in their professional networks were significantly more likely to attain senior management roles &mdash; the mechanism was not inspirational but operational: shared professional intelligence, early access to relevant information, and the kind of reciprocal advocacy that sponsorship research identifies as the primary driver of accelerated career advancement.</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p9">
+  <div class="pagehead"><span class="eyebrow">07 &mdash; Concentric (continued)</span><span class="pagenum">09 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 0 0 10px; color: #A97A43;">Why conventional solutions have not delivered</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">William Bridges' research on transitions draws a fundamental distinction: change is an external event; transition is the internal psychological reorientation it demands. The hardest part of professional transition, Bridges argues, is the neutral zone: the period when the old identity has dissolved and the new one has not yet formed. This is where most available professional support breaks down.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 16px;">Coaching requires a direction. Networking requires performing a stable professional identity. Leadership programmes presuppose clarity about where you are headed. None of these structures are designed for someone between identities. A peer council inverts the requirement. It asks only for presence and honesty. The value comes from the quality of exchange itself, between people navigating comparable circumstances at the same time.</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 22px;">Conventional professional structures failed to address what respondents described. Direction uncertainty gets treated as a performance problem rather than a strategic question. Burnout is framed as a personal failing rather than a structural outcome. Professional isolation is compounded by the reputational cost of disclosing it. Access gaps are left unaddressed by networking events that produce contacts, not peers. Most respondents had already tried the available options &mdash; coaching, networking, online communities. What each described, in different language, was the same thing: peers navigating comparable circumstances, with the experience to offer real perspective, and a reciprocal stake in the outcome.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 0 0 10px; color: #A97A43;">The founding cohort and research milestones</p>
+    <p style="font-size: 13.5px; line-height: 1.7; opacity: 0.82; margin: 0 0 24px;">This research is ongoing. Reports will be produced at 100, 200, and 250 respondents, at which point research intake will close. The decision to limit intake to 250 is deliberate. Concentric is not a platform intended to scale to thousands of members. Its model depends on precision: assembling circles of six women with sufficient professional complementarity to generate substantive exchange at each session. The primary objective of the founding period is to establish that model correctly at small scale, and to develop the placement methodology through which it is delivered, before expanding. The women who have participated in this research constitute the founding cohort from which the first circles are drawn.</p>
+    <div style="background: #281B2E; color: #F6F1E8; padding: 26px 28px; text-align: center;">
+      <p style="font-size: 15px; line-height: 1.6; margin: 0 0 12px;">To express interest in the Concentric pilot cohort, reply to this email or contact <a href="mailto:mila@wingsoflegacy.co" style="color: #A97A43;">mila@wingsoflegacy.co</a> directly. Placement conversations begin August 2026.</p>
+      <p style="font-size: 12px; opacity: 0.7; margin: 0;">mila@wingsoflegacy.co &middot; wingsoflegacy.co</p>
+    </div>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p9b">
+  <div class="pagehead"><span class="eyebrow">07 &mdash; Concentric (councils)</span><span class="pagenum">10 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">Three founding councils, opening August 2026</h2>
+    <p style="font-size: 14.5px; line-height: 1.75; opacity: 0.85; margin: 18px 0 30px;">Each founding council is shaped around the moment its members share. Founding pricing is locked for members who join before standard pricing takes effect in April 2027.</p>
+    <div style="display: flex; flex-direction: column; gap: 0;">
+      <div style="border-top: 1px solid #D9D2C8; padding: 22px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 8px;">
+          <h3 style="font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 19px; margin: 0;">The Transition Council</h3>
+          <span style="font-size: 12px; color: #A97A43; white-space: nowrap;">6/6 seats +2</span>
+        </div>
+        <p style="font-size: 12px; opacity: 0.6; margin: 0 0 10px;">$75/mo founding &middot; $150/mo standard (April 2027)</p>
+        <p style="font-size: 13.5px; line-height: 1.6; opacity: 0.82; margin: 0;">For women stepping out, stepping back, or rebuilding after significant change.</p>
+      </div>
+      <div style="border-top: 1px solid #D9D2C8; padding: 22px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 8px;">
+          <h3 style="font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 19px; margin: 0;">The Visibility &amp; Momentum Council</h3>
+          <span style="font-size: 12px; color: #A97A43; white-space: nowrap;">6/6 seats</span>
+        </div>
+        <p style="font-size: 12px; opacity: 0.6; margin: 0 0 10px;">$50/mo founding &middot; $100/mo standard (April 2027)</p>
+        <p style="font-size: 13.5px; line-height: 1.6; opacity: 0.82; margin: 0;">For women employed full-time who feel stuck or directionless despite external success.</p>
+      </div>
+      <div style="border-top: 1px solid #D9D2C8; border-bottom: 1px solid #D9D2C8; padding: 22px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 8px;">
+          <h3 style="font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 19px; margin: 0;">The Recalibration Council</h3>
+          <span style="font-size: 12px; color: #A97A43; white-space: nowrap;">5/6 seats</span>
+        </div>
+        <p style="font-size: 12px; opacity: 0.6; margin: 0 0 10px;">$75/mo founding &middot; $150/mo standard (April 2027)</p>
+        <p style="font-size: 13.5px; line-height: 1.6; opacity: 0.82; margin: 0;">For women navigating burnout recovery, leadership depletion, and professional reinvention after demanding roles.</p>
+      </div>
+    </div>
+    <p style="font-size: 13px; line-height: 1.7; opacity: 0.8; margin: 28px 0 0;">To express interest in the Concentric pilot cohort, reply to this email or contact <a href="mailto:mila@wingsoflegacy.co">mila@wingsoflegacy.co</a> directly. Placement conversations begin August 2026.</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p10">
+  <div class="pagehead"><span class="eyebrow">08 &mdash; Research Methodology</span><span class="pagenum">11 / 12</span></div>
+  <div class="rule"></div>
+  <div style="padding: 32px 72px 0;">
+    <h2 class="title">A note on how this research was conducted</h2>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 20px 0 8px; color: #A97A43;">Survey design</p>
+    <p style="font-size: 13px; line-height: 1.65; opacity: 0.82; margin: 0 0 16px;">The research instrument was a structured questionnaire developed to capture the professional circumstances, primary challenges, support structures, prior investments, and stated needs of women navigating significant career moments. Questions were designed to elicit both categorical responses and open-ended qualitative input. The survey was not diagnostic; it was designed to surface patterns across a broad range of professional contexts without presupposing the nature of respondents' experiences.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 16px 0 8px; color: #A97A43;">Recruitment and data collection</p>
+    <p style="font-size: 13px; line-height: 1.65; opacity: 0.82; margin: 0 0 16px;">Respondents were recruited through two channels. The primary channel was structured advertising via Meta platforms, targeting women across age cohorts from 22 to 55 and above, based in the United States. The secondary channel was a Typeform survey distributed through Wings of Legacy's existing networks and organic outreach. Data collection took place between June and July 2026. Respondents self-selected into participation; no incentive was offered. The final sample comprised 67 women, all based in the United States.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 16px 0 8px; color: #A97A43;">Analytical approach</p>
+    <p style="font-size: 13px; line-height: 1.65; opacity: 0.82; margin: 0 0 16px;">We reviewed each response thematically, considering answers in their totality rather than as isolated data points. This enabled a primary professional need to be identified for each participant where sufficient information was available. Where responses were ambiguous or incomplete, respondents were categorized as pending a placement conversation rather than assigned to a thematic category. Four themes were identified as occurring with sufficient frequency and internal consistency to warrant examination as structural patterns: direction uncertainty, burnout as a structural phenomenon, professional isolation, and the access gap.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 16px 0 8px; color: #A97A43;">External research</p>
+    <p style="font-size: 13px; line-height: 1.65; opacity: 0.82; margin: 0 0 16px;">We cross-referenced each theme against relevant external research, selecting sources based on methodological rigor, recency, and relevance to the specific experiences respondents described. Where multiple sources addressed the same phenomenon, we cited the source with the most directly applicable findings. Full source references appear in the report footer.</p>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; margin: 16px 0 8px; color: #A97A43;">Limitations</p>
+    <p style="font-size: 13px; line-height: 1.65; opacity: 0.82; margin: 0;">This research is not a representative sample of the broader population of professional women in the United States. Respondents self-selected in response to advertising or direct outreach, which introduces selection bias toward women actively seeking professional support or development at the time of recruitment. The findings reflect the experiences of women at active professional inflection points rather than a general population survey. Thematic categorization reflects analytical judgment applied to qualitative data and should be read accordingly.</p>
+  </div>
+  <div class="pagefoot"><span>Concentric &middot; What You Told Us, July 2026</span><span>Wings of Legacy</span></div>
+</section>
+
+<section class="page" id="p11" style="background: #281B2E; color: #F6F1E8;">
+  <div class="ringbg" style="width: 520px; height: 520px; top: -180px; left: -160px;"></div>
+  <div class="ringbg" style="width: 380px; height: 380px; bottom: -140px; right: -120px;"></div>
+  <div style="position: relative; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 72px;">
+    <span class="eyebrow" style="color: #A97A43; margin-bottom: 22px;">Report Cadence</span>
+    <p style="font-family: 'Bodoni Moda', serif; font-size: 26px; line-height: 1.5; max-width: 560px; margin: 0 0 24px;">This report covers the first 67 respondents. Subsequent reports will be issued at 100, 200, and 250 respondents. Research intake closes at 250.</p>
+    <p style="font-size: 14px; line-height: 1.7; max-width: 480px; opacity: 0.8; margin: 0 0 48px;">Each report will update the thematic analysis and refine the picture of the respondent pool as the sample grows.</p>
+    <div style="width: 40px; height: 1px; background: rgba(246,241,232,0.3); margin-bottom: 32px;"></div>
+    <p style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.65; margin: 0;">Concentric is a program of Wings of Legacy</p>
+    <p style="font-size: 12px; opacity: 0.55; margin: 8px 0 0;">mila@wingsoflegacy.co &middot; wingsoflegacy.co</p>
+  </div>
+  <div style="position: absolute; bottom: 30px; left: 72px; right: 72px; display: flex; justify-content: space-between; font-size: 9.5px; opacity: 0.4;"><span>Concentric &middot; What You Told Us, July 2026</span><span>12 / 12</span></div>
+</section>
+
+</doc-page>
+
+</x-dc>
+</body>
+</html>

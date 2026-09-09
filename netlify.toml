@@ -1,0 +1,13 @@
+[build]
+  publish = "deploy"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/apply"
+  to = "/apply.html"
+  status = 200
+
+[[redirects]]
+  from = "/the-council"
+  to = "/the-council.html"
+  status = 200

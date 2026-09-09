@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../assets/concentric-fonts.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #281B2E; }
+  a { color: #A97A43; }
+  a:hover { color: #cf9a5c; }
+</style>
+</helmet>
+
+<div style="font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background: #281B2E; color: #F6F1E8; min-height: 100vh; display: flex; flex-direction: column;">
+
+  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px;">
+    <a href="../index.html" style="display: block; text-decoration: none;">
+      <img src="../assets/concentric-lockup-cream-nav.png" alt="Concentric" style="height: 40px; width: auto; display: block;" />
+    </a>
+    <a href="../index.html#journal" style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #F6F1E8; text-decoration: none; opacity: 0.72;" style-hover="opacity: 1;">&larr; Back to Journal</a>
+  </nav>
+
+  <article style="max-width: 720px; margin: 0 auto; padding: 100px 48px 200px; flex: 1;">
+    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 20px;">
+      <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A97A43;">Essay</span>
+      <span style="opacity: 0.35; font-size: 12px;">&middot;</span>
+      <span style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.6;">From the research</span>
+    </div>
+    <h1 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.2vw, 48px); line-height: 1.2; margin: 0 0 44px;">Why six: the evidence for small peer circles</h1>
+
+    <div style="display: flex; flex-direction: column; gap: 24px; font-size: 18px; line-height: 1.8; opacity: 0.88;">
+      <p>Most professional support is built on the assumption that more is better. More contacts, more introductions, a wider room. Six people sounds, by that logic, like a limitation rather than a design choice. The research on group size says the opposite: six is not a compromise. It is close to the largest number at which real accountability is still possible.</p>
+      <p>Robin Dunbar's work at Oxford on the layers of human social cognition found that our relationships cluster at specific sizes, and that the clustering isn't a habit but a cognitive limit. The innermost layer, the group whose wellbeing we actively track and whose problems we hold in working memory without needing to be reminded, sits at around five to six people. Beyond that, Dunbar has put it, we stop inhabiting relationships and start managing them. That's not a statement about preference. It's a statement about the processing capacity available to any one person for genuine, sustained attention to another.</p>
+      <p>J. Richard Hackman's three decades at Harvard studying team performance point at the same ceiling from a different angle. The number of relationships a group has to manage doesn't grow with each additional member, it grows exponentially. Six people have fifteen interpersonal connections to track. Ten people have forty-five. Twelve have sixty-six. Somewhere around six or seven, the effort of managing the group starts to compete with the reason the group exists. Hackman's own research on what makes teams effective settled on four to six members as the range where every person stays visible and invested. Past that, it becomes possible to sit in a room and do nothing, and for no one to notice.</p>
+      <p>That possibility has a name. Social loafing, first documented by Ringelmann in 1913 and confirmed in the decades since, is the well-replicated tendency to contribute less to a group than one would alone. The finding that matters for group design is when it starts: reliably, at seven members or more. Below that threshold, what one person does or doesn't do stays individually visible. It can't be absorbed into the average. A circle of six means no one can quietly stop showing up.</p>
+      <p>Three separate literatures, cognitive science, organisational psychology, and social psychology, arrive at the same number by different routes. That convergence is the actual argument for six. It isn't an aesthetic choice or a nod to intimacy. It's the largest group size at which every member remains someone the others are actually tracking, rather than someone in the room.</p>
+      <p>What this means in practice is specific. A group large enough to feel like a network and small enough that everyone in it is still legible to everyone else are not the same thing, and most professional structures are built for the first. Conferences, cohorts, communities: all designed to feel expansive, all past the size where an individual's absence registers. The research on group size suggests that expansiveness and support are, past a certain point, in direct tension. Six is where that tension resolves in favour of being seen.</p>
+    </div>
+
+    <div style="margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(246,241,232,0.2); display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center;">
+      <a href="../research-report.html" style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #F6F1E8; text-decoration: none; opacity: 0.85; border-bottom: 1px solid rgba(246,241,232,0.35); padding-bottom: 4px;" style-hover="opacity: 1;">Read the full report &rarr;</a>
+      <a href="../index.html#apply" style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #A97A43; text-decoration: none;">Apply for Placement &rarr;</a>
+    </div>
+  </article>
+
+  <footer style="border-top: 1px solid rgba(246,241,232,0.2); padding: 40px 48px; text-align: center;">
+    <p style="font-size: 12px; opacity: 0.5; margin: 0;">&copy; 2026 Nexa Strategic Ltd. All rights reserved.</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

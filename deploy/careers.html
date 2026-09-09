@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="./assets/concentric-fonts.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F6F1E8; }
+  a { color: #A97A43; }
+  a:hover { color: #8a6636; }
+</style>
+</helmet>
+
+<div style="font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background: #F6F1E8; color: #281B2E; min-height: 100vh; display: flex; flex-direction: column;">
+
+  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px;">
+    <a href="./index.html" style="display: block; text-decoration: none;">
+      <img src="./assets/concentric-wordmark-alpha.png" alt="Concentric" style="height: 20px; width: auto; display: block;" />
+    </a>
+    <a href="./index.html" style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #281B2E; text-decoration: none; opacity: 0.72;" style-hover="opacity: 1;">&larr; Back to site</a>
+  </nav>
+
+  <section style="max-width: 900px; margin: 0 auto; padding: 100px 48px 200px; flex: 1;">
+    <span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A97A43;">Careers</span>
+    <h1 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px); line-height: 1.15; margin: 20px 0 24px;">There are no open roles right now.</h1>
+    <p style="font-size: 17px; line-height: 1.7; margin: 0 0 72px; max-width: 560px; opacity: 0.75;">Concentric is small by design, and so is the team behind it. When that changes, roles are listed here first. In the meantime, we're glad to keep a CV on file.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 48px 60px; border-top: 1px solid #D9D2C8; padding-top: 48px;">
+      <div>
+        <h4 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: 22px; margin: 0 0 12px;">Submit your CV</h4>
+        <p style="font-size: 16px; line-height: 1.6; margin: 0 0 24px; opacity: 0.8; max-width: 380px;">No live vacancies, but we review speculative CVs as the team grows.</p>
+        <a href="mailto:mila@wingsoflegacy.co?subject=CV%20Submission" style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #F6F1E8; background: #281B2E; border: 1px solid #281B2E; padding: 14px 28px; text-decoration: none; display: inline-block;" style-hover="background: #3A2544; border-color: #3A2544;">Send your CV &rarr;</a>
+      </div>
+      <div>
+        <h4 style="font-family: 'Recoleta', Georgia, serif; font-weight: 400; font-size: 22px; margin: 0 0 12px;">Become a facilitator</h4>
+        <p style="font-size: 16px; line-height: 1.6; margin: 0 0 24px; opacity: 0.8; max-width: 380px;">Facilitators hold monthly council conversations on a voluntary basis. If you have experience holding space for structured group dialogue, we'd like to hear from you.</p>
+        <a href="mailto:mila@wingsoflegacy.co?subject=Volunteer%20Facilitator%20Application" style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #281B2E; text-decoration: none; opacity: 0.8; border-bottom: 1px solid rgba(36,23,46,0.35); padding-bottom: 4px;" style-hover="opacity: 1;">Apply as a facilitator (voluntary) &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid #D9D2C8; padding: 40px 48px; text-align: center;">
+    <p style="font-size: 12px; opacity: 0.5; margin: 0;">&copy; 2026 Nexa Strategic Ltd. All rights reserved.</p>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
