@@ -1,24 +1,21 @@
-# Concentric — final locked build
+# Concentric website — release build
 
-Design direction: preserve the approved Concentric visual language (dark olive / cream / gold, Recoleta + Neue Montreal, editorial scale, circular Council imagery) while simplifying copy and making interaction purposeful.
+This build preserves the approved Concentric visual direction while tightening alignment, responsiveness and interaction.
 
-## Deploy
-- Publish directory: repository root (`.`)
-- Netlify Functions: `netlify/functions`
-- Environment variable required for application writes: `AIRTABLE_PAT`
-- Optional overrides: `AIRTABLE_BASE_ID`, `AIRTABLE_TABLE_ID`
-
-The function defaults to the Airtable base/table IDs supplied for the Applicant Pipeline link.
+## Interaction included
+- one-session brand intro on the homepage
+- auto-cycling + hover/focus/click hero Council orbit
+- hover/focus/click Council-seat explainer
+- keyboard-accessible Edition One tabs
+- animated research accordion
+- scroll progress and restrained reveal motion
+- mobile navigation and responsive layouts
+- reduced-motion support
 
 ## Fonts
-Licensed font binaries are intentionally not included. Add your licensed files under `assets/fonts/` using the filenames referenced in `styles.css`.
+Licensed font binaries are intentionally not included. Keep your existing licensed Recoleta / Neue Montreal font files in `assets/fonts/`, or update the `@font-face` references in `styles.css` to your current hosted font URLs.
 
-## Preserved routes
-- `/research-report`
-- `/journal/open-inquiry`
-- `/journal/why-six`
-- `/journal/the-neutral-zone`
-- `/journal/several-selves`
-- `/journal/the-room-full-of-women`
+## Apply / Airtable
+The browser submits to `/.netlify/functions/apply`. Keep the Airtable token in Netlify environment variables, never in client code.
 
-Journal article routes are preserved without inventing article bodies that were not supplied in the source package.
+Required Airtable fields: First name, Last name, Email, Based, Navigating, Submitted.
