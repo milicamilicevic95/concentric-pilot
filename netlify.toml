@@ -1,7 +1,6 @@
 [build]
   publish = "."
   functions = "netlify/functions"
-
 [[redirects]]
   from = "/council"
   to = "/council.html"
@@ -27,14 +26,6 @@
   to = "/apply.html"
   status = 200
 [[redirects]]
-  from = "/research-report"
-  to = "/research-report.html"
-  status = 200
-[[redirects]]
   from = "/legal"
   to = "/legal.html"
-  status = 200
-[[redirects]]
-  from = "/journal/:slug"
-  to = "/journal/:slug.html"
   status = 200

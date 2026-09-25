@@ -1,21 +1,7 @@
-# Concentric website — release build
+# Concentric redesign
 
-This build preserves the approved Concentric visual direction while tightening alignment, responsiveness and interaction.
+Static Netlify build. Brand canvas: #f2ede1. Uses the supplied Concentric horizontal lockup exactly, cropped only to remove empty canvas. No font files are included. Add licensed Recoleta and Neue Montreal through your deployment if required; CSS contains fallbacks.
 
-## Interaction included
-- one-session brand intro on the homepage
-- auto-cycling + hover/focus/click hero Council orbit
-- hover/focus/click Council-seat explainer
-- keyboard-accessible Edition One tabs
-- animated research accordion
-- scroll progress and restrained reveal motion
-- mobile navigation and responsive layouts
-- reduced-motion support
+Set AIRTABLE_PAT in Netlify environment variables for applications.
 
-## Fonts
-Licensed font binaries are intentionally not included. Keep your existing licensed Recoleta / Neue Montreal font files in `assets/fonts/`, or update the `@font-face` references in `styles.css` to your current hosted font URLs.
-
-## Apply / Airtable
-The browser submits to `/.netlify/functions/apply`. Keep the Airtable token in Netlify environment variables, never in client code.
-
-Required Airtable fields: First name, Last name, Email, Based, Navigating, Submitted.
+The Journal article routes are designed but intentionally do not invent article copy; replace the placeholder paragraph with the approved live article body before publishing those routes.
