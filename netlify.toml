@@ -15,6 +15,10 @@
   to = "/evidence-base.html"
   status = 200
 [[redirects]]
+  from = "/journal"
+  to = "/journal.html"
+  status = 200
+[[redirects]]
   from = "/about"
   to = "/about.html"
   status = 200
@@ -23,12 +27,12 @@
   to = "/apply.html"
   status = 200
 [[redirects]]
-  from = "/journal"
-  to = "/journal.html"
-  status = 200
-[[redirects]]
   from = "/research-report"
   to = "/research-report.html"
+  status = 200
+[[redirects]]
+  from = "/legal"
+  to = "/legal.html"
   status = 200
 [[redirects]]
   from = "/journal/:slug"
