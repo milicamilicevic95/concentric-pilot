@@ -1,10 +1,17 @@
 [build]
   publish = "."
-  functions = "netlify/functions"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+[[redirects]]
+  from = "/research-report"
+  to = "/research-report.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal"
+  to = "/journal.html"
+  status = 200
+
+[[redirects]]
+  from = "/journal/*"
+  to = "/journal/:splat.html"
+  status = 200
