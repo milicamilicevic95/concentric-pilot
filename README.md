@@ -1,24 +1,9 @@
-# Concentric website v3
+# Concentric website — final rebuild
 
-Static Netlify site with a secure Airtable-backed application form.
-
-## Fonts
-Add the licensed font files to `assets/fonts/` using the filenames listed in `assets/fonts/README.txt` before deployment. Font binaries are intentionally excluded from this handoff.
+Static HTML/CSS/JS site for Netlify.
 
 ## Airtable
-The application form posts to `/.netlify/functions/apply`.
+The Apply form posts to `/.netlify/functions/apply` and writes to base `appDhFT8ijd9EofI4`, table `tblAXeR08XGjKsF5y`. Set `AIRTABLE_PAT` in Netlify environment variables. Expected Airtable fields: `First name`, `Last name`, `Email`, `Based`, `Navigating`, `submitted`.
 
-Set these Netlify environment variables:
-- `AIRTABLE_PAT` — Airtable personal access token with create-record permission for the target base/table.
-- `AIRTABLE_BASE_ID` — optional; defaults to `appDhFT8ijd9EofI4`.
-- `AIRTABLE_TABLE_ID` — optional; defaults to `tblAXeR08XGjKsF5y`.
-
-The function currently writes these Airtable field names exactly:
-- `First name`
-- `Last name`
-- `Email`
-- `Based`
-- `Navigating`
-- `Submitted`
-
-If the actual Airtable column capitalization differs, edit the keys in `netlify/functions/apply.js` before deployment.
+## Fonts
+The CSS references the licensed Recoleta and Neue Montreal font filenames from the existing project. Font binaries are intentionally not included in this handoff. Keep the licensed files in `assets/fonts/` in your deployed project.
