@@ -1,13 +1,24 @@
-# Concentric website
+# Concentric — final locked build
 
-Fresh static site build for Netlify.
+Design direction: preserve the approved Concentric visual language (dark olive / cream / gold, Recoleta + Neue Montreal, editorial scale, circular Council imagery) while simplifying copy and making interaction purposeful.
 
-## Before deployment
+## Deploy
+- Publish directory: repository root (`.`)
+- Netlify Functions: `netlify/functions`
+- Environment variable required for application writes: `AIRTABLE_PAT`
+- Optional overrides: `AIRTABLE_BASE_ID`, `AIRTABLE_TABLE_ID`
 
-Add your licensed font files to `assets/fonts/` using the exact filenames listed in `assets/fonts/README.txt`. The font binaries are intentionally not included in this package.
+The function defaults to the Airtable base/table IDs supplied for the Applicant Pipeline link.
 
-## Netlify
+## Fonts
+Licensed font binaries are intentionally not included. Add your licensed files under `assets/fonts/` using the filenames referenced in `styles.css`.
 
-Publish directory: repository root (`.`).
+## Preserved routes
+- `/research-report`
+- `/journal/open-inquiry`
+- `/journal/why-six`
+- `/journal/the-neutral-zone`
+- `/journal/several-selves`
+- `/journal/the-room-full-of-women`
 
-The Apply page uses Netlify Forms and will appear in Netlify after the first deployed form submission.
+Journal article routes are preserved without inventing article bodies that were not supplied in the source package.

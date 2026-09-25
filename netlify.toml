@@ -1,17 +1,36 @@
 [build]
   publish = "."
+  functions = "netlify/functions"
 
 [[redirects]]
-  from = "/research-report"
-  to = "/research-report.html"
+  from = "/council"
+  to = "/council.html"
   status = 200
-
+[[redirects]]
+  from = "/edition-one"
+  to = "/edition-one.html"
+  status = 200
+[[redirects]]
+  from = "/evidence-base"
+  to = "/evidence-base.html"
+  status = 200
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+[[redirects]]
+  from = "/apply"
+  to = "/apply.html"
+  status = 200
 [[redirects]]
   from = "/journal"
   to = "/journal.html"
   status = 200
-
 [[redirects]]
-  from = "/journal/*"
-  to = "/journal/:splat.html"
+  from = "/research-report"
+  to = "/research-report.html"
+  status = 200
+[[redirects]]
+  from = "/journal/:slug"
+  to = "/journal/:slug.html"
   status = 200
